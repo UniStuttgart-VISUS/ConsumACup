@@ -1,0 +1,14 @@
+[Unit]
+Description = ConsumAcup
+
+[Service]
+Type=simple
+WorkingDirectory=/home/visus/Projects/ConsumAcup_Prod/
+ExecStart=/usr/bin/python3.9 /home/visus/Projects/ConsumAcup_Prod/main.py
+Terminal=true
+Restart=on-failure
+StandardOutput=file:/home/visus/consumacup.log
+StandardError=file:/home/visus/consumacup_error.log
+
+[Install]
+WantedBy=default.target

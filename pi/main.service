@@ -1,0 +1,17 @@
+[Unit]
+Description = ConsumAcup
+After=multi-user.target
+
+[Service]
+Type=simple
+User=visus
+WorkingDirectory=/home/visus/Projects/ConsumAcup_Prod/
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/visus/.Xauthority"
+ExecStart=/usr/bin/python3.9 /home/visus/Projects/ConsumAcup_Prod/main.py
+Terminal=true
+Restart=on-failure
+
+[Install]
+WantedBy=graphical.target
+

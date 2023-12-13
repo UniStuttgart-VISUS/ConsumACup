@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget{
+background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(89, 122, 170, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,7">
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="sidebar" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget#centralwidget{
+background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(89, 122, 170, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+      </property>
+      <widget class="QPushButton" name="btnProfileSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/settings.png</normaloff>images/settings.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>70</width>
+         <height>70</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnExitSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>400</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(74, 0, 0);
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/exit.png</normaloff>images/exit.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnStatsSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>79</y>
+         <width>100</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/analytics.png</normaloff>images/analytics.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRatingSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/rating.png</normaloff>images/rating.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnResourcesSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/milk-box.png</normaloff>images/milk-box.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRefillSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>320</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/coffee-filter.png</normaloff>images/coffee-filter.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="statsPage" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget#centralwidget{
+background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(89, 122, 170, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+      </property>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>700</width>
+         <height>481</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTabBar::tab { 
+height: 40px; 
+width: 200px;
+background-color: rgb(40, 57, 83);
+color: white
+}
+QTabBar::tab:selceted { 
+background-color: rgb(81, 116, 168);
+color: black
+} 
+background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(89, 122, 170, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Triangular</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="usesScrollButtons">
+        <bool>true</bool>
+       </property>
+       <property name="tabsClosable">
+        <bool>false</bool>
+       </property>
+       <property name="movable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="tabStockOverview">
+        <attribute name="title">
+         <string>Global Stats</string>
+        </attribute>
+        <widget class="QWidget" name="chartContainer" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>691</width>
+           <height>431</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbGlobalStats">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>451</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>20</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 20pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Bean Rating</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Earliest and Latest Coffee</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Coffee Type Trends</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Peak Hours Visualization</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Highscore Coffee Consumption</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Debt Ranking</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Purchase Overview</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Refill Ranking</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="cbTimeLine">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>0</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>20</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 20pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>year</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>month</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>week</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>day</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Personal Stats</string>
+        </attribute>
+        <widget class="QWidget" name="chartContainer_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>691</width>
+           <height>421</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbPersonalStats">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>451</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>20</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 20pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Please select ...</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>My Coffee Over Time</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>My Debt Compared to Average</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>My Total Coffee Costs</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="cbPersonalTimeLine">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>0</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>20</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 20pt &quot;Segoe UI&quot;;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>year</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>month</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>week</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>day</string>
+          </property>
+         </item>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionLogin">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/log-in.png</normaloff>images/log-in.png</iconset>
+   </property>
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionSign_up">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/sign-up.png</normaloff>images/sign-up.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sign up</string>
+   </property>
+  </action>
+  <action name="actionStats">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/analytics.png</normaloff>images/analytics.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stats</string>
+   </property>
+  </action>
+  <action name="actionResources">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/milk-box.png</normaloff>images/milk-box.png</iconset>
+   </property>
+   <property name="text">
+    <string>Resources</string>
+   </property>
+  </action>
+  <action name="actionProfile">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>images/settings.png</normaloff>images/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Profile</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="actionRefill">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/coffee-filter.png</normaloff>images/coffee-filter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refill</string>
+   </property>
+  </action>
+  <action name="actionRating">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/rating.png</normaloff>images/rating.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rating</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

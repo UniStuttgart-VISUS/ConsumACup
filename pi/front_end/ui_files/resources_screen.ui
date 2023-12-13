@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget{
+background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(89, 122, 170, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,7">
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="sidebar" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget#centralwidget{
+background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(89, 122, 170, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+      </property>
+      <widget class="QPushButton" name="btnProfileSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/settings.png</normaloff>images/settings.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>70</width>
+         <height>70</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnExitSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>400</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(74, 0, 0);
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/exit.png</normaloff>images/exit.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnStatsSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>79</y>
+         <width>100</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/analytics.png</normaloff>images/analytics.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRatingSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/rating.png</normaloff>images/rating.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnResourcesSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>240</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/milk-box.png</normaloff>images/milk-box.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRefillSidebar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>320</y>
+         <width>100</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>images/coffee-filter.png</normaloff>images/coffee-filter.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="resourcePage" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget#centralwidget{
+background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(89, 122, 170, 255), stop:1 rgba(255, 255, 255, 255));}</string>
+      </property>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>700</width>
+         <height>480</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTabBar::tab { 
+height: 40px; 
+width: 200px;
+background-color: rgb(40, 57, 83);
+color: white
+}
+QTabBar::tab:selceted { 
+background-color: rgb(81, 116, 168);
+color: black
+} 
+background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(89, 122, 170, 255), stop:1 rgba(255, 255, 255, 255));</string>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Triangular</enum>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="usesScrollButtons">
+        <bool>true</bool>
+       </property>
+       <property name="tabsClosable">
+        <bool>false</bool>
+       </property>
+       <property name="movable">
+        <bool>true</bool>
+       </property>
+       <property name="tabBarAutoHide">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="tabStockOverview">
+        <attribute name="title">
+         <string>Resource Overview</string>
+        </attribute>
+        <widget class="QWidget" name="chartContainer" native="true">
+         <property name="geometry">
+          <rect>
+           <x>-10</x>
+           <y>0</y>
+           <width>711</width>
+           <height>451</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <kerning>true</kerning>
+          </font>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnDrillUp">
+         <property name="geometry">
+          <rect>
+           <x>560</x>
+           <y>20</y>
+           <width>111</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:15px;
+background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Drill-Up!</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tabAddResources">
+        <attribute name="title">
+         <string>Add Stock</string>
+        </attribute>
+        <widget class="QLabel" name="txtPrice_7">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>100</y>
+           <width>131</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 36pt &quot;Oswald&quot;; color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Price per l:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbSugar">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>230</y>
+           <width>341</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri Light</family>
+           <pointsize>20</pointsize>
+           <weight>3</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 57, 83);
+color: rgb(255, 255, 255);
+font: 25 20pt &quot;Calibri Light&quot;;</string>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="cbPriceMilk">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>140</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 57, 83);
+color: rgb(255, 255, 255);
+font: 25 20pt &quot;Calibri Light&quot;;</string>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbPriceCoffee">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>50</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 57, 83);
+color: rgb(255, 255, 255);
+font: 25 20pt &quot;Calibri Light&quot;;</string>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnAddToStock">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>380</y>
+           <width>171</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:15px;
+background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Add to stock!</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="txtAmount_7">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>100</y>
+           <width>171</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 36pt &quot;Oswald&quot;; color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Liter:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="txtAmount_8">
+         <property name="geometry">
+          <rect>
+           <x>354</x>
+           <y>10</y>
+           <width>171</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 36pt &quot;Oswald&quot;; color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Gram:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbMilk">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>140</y>
+           <width>341</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri Light</family>
+           <pointsize>20</pointsize>
+           <weight>3</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 57, 83);
+color: rgb(255, 255, 255);
+font: 25 20pt &quot;Calibri Light&quot;;</string>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="txtCofeeBeanSort_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>251</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 36pt &quot;Oswald&quot;; color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Coffee bean sort:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbAmountMilk">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>140</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 57, 83);
+color: rgb(255, 255, 255);
+font: 25 20pt &quot;Calibri Light&quot;;</string>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="cbAmountCoffee">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>50</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 57, 83);
+color: rgb(255, 255, 255);
+font: 25 20pt &quot;Calibri Light&quot;;</string>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>3000</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2000</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1000</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>750</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>250</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="txtAmount_9">
+         <property name="geometry">
+          <rect>
+           <x>354</x>
+           <y>190</y>
+           <width>171</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 36pt &quot;Oswald&quot;; color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Gram:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="txtMilkSort_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>100</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 36pt &quot;Oswald&quot;; color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Milk sort:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="txtPrice_9">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>10</y>
+           <width>131</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 36pt &quot;Oswald&quot;; color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Price per kg:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbCoffee">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>341</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Calibri Light</family>
+           <pointsize>20</pointsize>
+           <weight>3</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 57, 83);
+color: rgb(255, 255, 255);
+font: 25 20pt &quot;Calibri Light&quot;;</string>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="txtSugarSort_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>190</y>
+           <width>251</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 36pt &quot;Oswald&quot;; color:rgb(0, 0, 0)</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Sugar sort:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbAmountSugar">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>230</y>
+           <width>91</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>true</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(40, 57, 83);
+color: rgb(255, 255, 255);
+font: 25 20pt &quot;Calibri Light&quot;;</string>
+         </property>
+         <property name="editable">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>1000</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>750</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>500</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>250</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="btnKeyboard">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>380</y>
+           <width>101</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:15px;
+background-color: rgb(193, 193, 193);
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>images/keyboard.png</normaloff>images/keyboard.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tabEdit">
+        <attribute name="title">
+         <string>Edit Stock</string>
+        </attribute>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>20</y>
+           <width>631</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QHeaderView { font-size: 15pt; }
+QHeaderView::section {
+background-color: rgb(40, 57, 83);
+color: white
+}
+QTableView QTableCornerButton::section {
+background-color: rgb(40, 57, 83);
+}
+
+QTableView {
+background: rgb(40, 57, 83)
+}
+
+QTableView::item {
+background-color: white;
+}
+</string>
+         </property>
+         <column>
+          <property name="text">
+           <string>Category</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Resource Name</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Amount</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QPushButton" name="btnUpdateStock">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>380</y>
+           <width>171</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:15px;
+background-color: rgb(40, 57, 83); 
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Update stock!</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnKeyboard_es">
+         <property name="geometry">
+          <rect>
+           <x>560</x>
+           <y>380</y>
+           <width>101</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:15px;
+background-color: rgb(193, 193, 193);
+color: white;
+font: 16pt &quot;Lora&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>images/keyboard.png</normaloff>images/keyboard.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionLogin">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/log-in.png</normaloff>images/log-in.png</iconset>
+   </property>
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionSign_up">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/sign-up.png</normaloff>images/sign-up.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sign up</string>
+   </property>
+  </action>
+  <action name="actionStats">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/analytics.png</normaloff>images/analytics.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stats</string>
+   </property>
+  </action>
+  <action name="actionResources">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/milk-box.png</normaloff>images/milk-box.png</iconset>
+   </property>
+   <property name="text">
+    <string>Resources</string>
+   </property>
+  </action>
+  <action name="actionProfile">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>images/settings.png</normaloff>images/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Profile</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="actionRefill">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/coffee-filter.png</normaloff>images/coffee-filter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refill</string>
+   </property>
+  </action>
+  <action name="actionRating">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/rating.png</normaloff>images/rating.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rating</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
